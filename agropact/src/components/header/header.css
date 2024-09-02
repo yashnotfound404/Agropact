@@ -2,11 +2,36 @@ header{
     width: 100%;
     height: 80px;
     margin: auto;
-    padding: 15px 0px;
+    padding:20px 0px;
 }
 
-header headersearch{
+header .headersearch{
     width: 100%;
-    height: 40px;
+    height: 60px;
+    border: 1px solid #3bb77e; 
+    padding: 10px 15px;
+}
+header .headersearch .search{
+    width: 82%;
+
+}
+header .headersearch .selectdrop{
+    width: 20%;
+    position: relative;
+}
+header .headersearch .selectdrop:after{
+    content: " ";
+    width: 1px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+header .headersearch .search input{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    outline: none !important;
 }
 
