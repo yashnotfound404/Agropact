@@ -1,0 +1,22 @@
+.contained{
+    width: 100vw;
+    height: auto;
+    background-color: aliceblue;
+}
+.lowermain{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+}
+.left-text{
+    padding: 10px;
+    margin: 10px;
+}
+.right-img{
+    padding: 10px;
+    margin: 10px;
+}
+.contained img{
+    width: 80px;
+}

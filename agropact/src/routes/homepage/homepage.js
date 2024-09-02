@@ -6,13 +6,16 @@ function HomePage() {
     return (
         <>
             <Header />
-            <main className='frame'>
+            <main className='contained'>
+            <img src={BGIMG} />
+            <div className='lowermain'>
                 <div className='left-text'>
                     Welcome to AgroPact
                 </div>
                 <div className='right-img'>
-                    <img src={BGIMG} />
+                    {/* placeholder for image*/}
                 </div>
+            </div>
             </main>
         </>
     )
