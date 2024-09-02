@@ -1,35 +1,43 @@
 import React from 'react';
-import '../header/header.css'
 import Logo from '../../assets/images/LOGO-SIH1.png'
-import SearchIcon from '@mui/icons-material/Search';
+import '../header/header.css'
+// import SearchIcon from '@mui/icons-material/Search';
 const Header = () => {
 
     return (
         <>
-            <header>
+            <header className='Header'>
                 <div className='top-container'>
-                    <div className='row'>
-                        <div className='col-sm-2'>
-                            <img src={Logo} />
-                        </div>
+                    <div className='logoimg'>
+                        <img src={Logo} />
 
-                        {/* header search start here */}
-                        <div className='col-sm-5'>
-                            <div className='headerSearch d-flex align-item-center'>
+                    <div className='title'>AgroPact</div>
+                    </div>
 
-                                <div className='selectdrop curso'>
-                                    All Categories
+                    {/* header search start here */}
+                    <div className='cont'>
+                        <div className='headerSearch'>
 
-                                </div>
-                                <div className='search'>
-                                    <input type='text' placeholder='Search for farmer produce....'/>
-                                    <SearchIcon/>
-                                </div>
+                            <div className='selectdrop'>
+                                All Categories          |
+
+                            </div>
+                            <div className='search'>
+                                <input type='text' placeholder='Search for farmer produce....' />
+                                {/* <SearchIcon/> */}
                             </div>
                         </div>
-                        {/* header seatch end here  */}
-
                     </div>
+                    {/* header seatch end here  */}
+                    <div className='contents'>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href='#'>Help</a></li>
+                            <li><a href='#'>More</a></li>
+                        </ul>
+                    </div>
+
 
                 </div>
             </header>
@@ -37,3 +45,4 @@ const Header = () => {
     )
 
 }
+export default Header;
